@@ -9,7 +9,7 @@ class Ginac < Formula
   depends_on 'readline'
 
   def install
-    system "./configure", "--disable-dependency-tracking",
+    system "./configure",
                           "--prefix=#{prefix}"
     system "make install"
   end
